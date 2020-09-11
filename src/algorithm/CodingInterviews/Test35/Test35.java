@@ -12,6 +12,54 @@ public class Test35 {
 
     }
 
+    public Node copyRandomList01(Node head) {
+        if (head == null){
+            return null;
+        }else if (head.next == null){
+            if (head.random == null){
+                return new Node(head.val);
+            }
+            else{
+                Node node = new Node(head.val);
+                node.random = node;
+                return node;
+            }
+        }
+
+        Node temp = head;
+        while(temp != null){
+            Node node = new Node(temp.val);
+            node.next = temp.next;
+            temp.next = node;
+            temp = node.next;
+        }
+
+        temp = head;
+
+        while (temp != null){
+            Node node = temp.next;
+            if (temp.random != null){
+                node.random = temp.random.next;
+            }
+            temp = node.next;
+        }
+
+        temp = head;
+        Node newHead = head.next;
+        Node node = newHead;
+
+        head.next = node.next;
+        head = head.next;
+
+        while (head != null){
+            node.next = head.next;
+            node = node.next;
+            head.next = node.next;
+            head = head.next;
+        }
+        return newHead;
+    }
+
     public Node copyRandomList(Node head) {
         if (head == null){
             return null;
