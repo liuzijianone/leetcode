@@ -4,6 +4,7 @@ package algorithm.CodingInterviews.Test25;
  * @author liuzijian
  * @version 1.0
  * @since 2020/9/1 19:41
+ *  输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
  */
 public class Test25 {
     public static void main(String[] args) {

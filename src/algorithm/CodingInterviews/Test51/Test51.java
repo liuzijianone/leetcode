@@ -4,6 +4,9 @@ package algorithm.CodingInterviews.Test51;
  * @author liuzijian
  * @version 1.0
  * @since 2020/9/6 14:40
+ *
+ *  在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
+ *
  */
 public class Test51 {
     public int reversePairs(int[] nums) {

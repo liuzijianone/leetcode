@@ -7,6 +7,8 @@ import org.junit.Test;
  * @version 1.0
  * @since 2020/8/30 20:34
  *
+ * 请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
+ *
  * 考虑String由char[]实现，是不可变的对象
  * 使用StringBuilder更有利于降低内存和时间的使用
  */

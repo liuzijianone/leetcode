@@ -6,6 +6,7 @@ import java.util.Arrays;
  * @author liuzijian
  * @version 1.0
  * @since 2020/9/10 14:19
+ *  输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。
  */
 public class Test29 {
     public static void main(String[] args) {

@@ -4,6 +4,7 @@ package algorithm.CodingInterviews.Test24;
  * @author liuzijian
  * @version 1.0
  * @since 2020/9/1 19:20
+ *  定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。
  */
 public class Test24 {
     public static void main(String[] args) {

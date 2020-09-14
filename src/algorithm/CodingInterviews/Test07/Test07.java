@@ -7,6 +7,8 @@ import java.util.TreeMap;
  * @author liuzijian
  * @version 1.0
  * @since 2020/8/31 20:28
+ *
+ *  输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
  */
 public class Test07 {
     public static void main(String[] args) {

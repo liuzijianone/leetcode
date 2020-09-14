@@ -4,6 +4,7 @@ package algorithm.CodingInterviews.Test53;
  * @author liuzijian
  * @version 1.0
  * @since 2020/9/5 19:59
+ *  统计一个数字在排序数组中出现的次数。
  */
 public class Test53 {
     public static void main(String[] args) {

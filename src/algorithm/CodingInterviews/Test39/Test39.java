@@ -4,6 +4,9 @@ package algorithm.CodingInterviews.Test39;
  * @author liuzijian
  * @version 1.0
  * @since 2020/9/4 20:53
+ *
+ *  数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
+ *
  */
 public class Test39 {
     public static void main(String[] args) {
