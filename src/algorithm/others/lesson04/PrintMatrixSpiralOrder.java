@@ -1,5 +1,8 @@
 package algorithm.others.lesson04;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @author liuzijian
  * @version 1.0
