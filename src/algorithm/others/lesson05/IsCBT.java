@@ -39,7 +39,6 @@ public class IsCBT {
                 break;
             }
         }
-
         while(!queue.isEmpty()){
             temp = queue.poll();
             if (temp != null){

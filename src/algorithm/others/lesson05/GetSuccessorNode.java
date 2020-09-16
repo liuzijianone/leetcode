@@ -90,9 +90,6 @@ class TreeNode{
     TreeNode parent;
     TreeNode left;
     TreeNode right;
-
-
-
     public TreeNode(int x){
         this.val = x;
     }

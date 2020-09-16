@@ -37,7 +37,7 @@ public class TreeRecur {
         if (node == null){
             return;
         }
-        System.out.println(node.val);
+        System.out.print(node.val + " ");
         preOrderRecur(node.left);
         preOrderRecur(node.right);
     }
@@ -47,7 +47,7 @@ public class TreeRecur {
             return;
         }
         preOrderRecur(node.left);
-        System.out.println(node.val);
+        System.out.print(node.val + " ");
         preOrderRecur(node.right);
     }
 
@@ -58,7 +58,7 @@ public class TreeRecur {
 
         preOrderRecur(node.left);
         preOrderRecur(node.right);
-        System.out.println(node.val);
+        System.out.print(node.val + " ");
     }
 
 }

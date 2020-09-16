@@ -1,4 +1,4 @@
-package algorithm.leetcode;
+package algorithm.leetcode.Test617;
 
 /**
  * @author liuzijian
