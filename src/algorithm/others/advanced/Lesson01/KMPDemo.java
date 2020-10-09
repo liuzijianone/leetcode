@@ -8,8 +8,8 @@ package algorithm.others.advanced.Lesson01;
 public class KMPDemo {
 
     public static void main(String[] args) {
-        String str = "abdefghijk";
-        String match ="1243";
+        String str = "aabaaabaaac";
+        String match ="aabaaac";
         System.out.println(getIndexOf(str, match));
 
     }
@@ -54,13 +54,14 @@ public class KMPDemo {
         next[0] = -1;
         next[1] = 0;
         int cn = 0;
-        for (int i = 2; i < next.length; i ++){
+        int i = 2;
+        while( i < next.length){
             if(array[i - 1] == array[cn]){
-                next[i] = ++cn;
+                next[i++] = ++cn;
             }else if(cn > 0){
                 cn = next[cn];
             }else{
-                next[i] = 0;
+                next[i++] = 0;
             }
         }
 
