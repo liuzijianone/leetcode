@@ -66,7 +66,5 @@ public class KMPDemo {
         }
 
         return next;
-
-
     }
 }
