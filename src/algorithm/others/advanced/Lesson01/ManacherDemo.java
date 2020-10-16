@@ -9,9 +9,8 @@ import java.util.Arrays;
  */
 public class ManacherDemo {
     public static void main(String[] args) {
-        String str = "12343";
+        String str = "cbba";
         System.out.println(maxLcpsLength(str));
-//        System.out.println(getManacherString(str));
     }
 
     public static String getManacherString(String str){
@@ -24,10 +23,11 @@ public class ManacherDemo {
         return builder.toString();
     }
 
-    public static int maxLcpsLength(String str) {
+    public static String maxLcpsLength(String str) {
         if (str == null || str.length() == 0) {
-            return 0;
+            return str;
         }
+        String s = str;
 
         str = getManacherString(str);
         char[] array = str.toCharArray();
@@ -36,6 +36,7 @@ public class ManacherDemo {
         int R = -1;
         int C = -1;
         int max = Integer.MIN_VALUE;
+        int maxIndex = -1;
 
         for (int i = 0; i < array.length; i++) {
             P[i] = R > i ? Math.min(P[2 * C - i], R - i) : 1;
@@ -46,16 +47,17 @@ public class ManacherDemo {
                     break;
                 }
             }
-
             if (i + P[i] > R) {
                 C = i;
                 R = P[i] + i;
             }
-            max = Math.max(max, P[i]);
+            if(max < P[i]){
+                max = P[i];
+                maxIndex = i;
+            }
         }
+        return s.substring((maxIndex - P[maxIndex] + 1) / 2, (maxIndex - P[maxIndex] + 1) / 2 + max - 1);
 
-        System.out.println(Arrays.toString(P));
-        return max - 1;
     }
 
 }
